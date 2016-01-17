@@ -6,7 +6,7 @@ def index(request):
     current_user = ''
 
     if request.user.is_authenticated():
-        current_user = request.user.__str__
+        current_user = request.user.get_full_name()
 
     context = {
         'user': current_user
