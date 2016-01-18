@@ -9,6 +9,11 @@ body {
   display: table;
 }
 
+.jumbotron {
+    background-color: #646469;
+    color: #fff;
+}
+
 .container {
   height: auto;
 }
