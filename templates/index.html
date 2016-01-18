@@ -1,6 +1,62 @@
 {% extends 'base.html' %}
 
+{% block jumbotron %}
+<div class="jumbotron">
+<div class="container">
+<div class="row">
+	<!-- The minimum amount the size of screen can be while still being column of 6 -->
+	<div class="text-align-center">
+		<h1>JCain's Portfolio/Landing</h1>
+		<p class='lead text-align-center'>This portfolio page is designed to educate clients and prospects about my skills as a full stack web developer</p>
+	</div>
+
+	<!-- <div class='col-sm-6'> -->
+
+		<!-- <iframe width="560" height="315" src="http://www.youtube.com/embed/2uLYO1LUf6Q" frameborder="0" allowfullscreen ></iframe> -->
+
+		<!-- Example for a responsive image -->
+		<!-- <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Barbados_beach.jpg" class='img-responsive' /> -->
+	<!-- </div> -->
+
+</div>
+</div>
+</div>
+{% endblock %}
 
 {% block content %}
-<h1>{{ user }}</h1>
+<div class="row">
+	<!-- E.g col-xs-3 will set the minimum amount the screen can be while still being a column of 3 to xtra small;
+	     Essentially, no matter what screen size you're on it will be a column of 3. AKA you can essentially set 'defaults' with xs -->
+    <!-- pull-right compiles to float: right!important; -->
+	<div class='col-sm-3'>
+		<p class='lead text-align-center'>Django &amp; Bootstrap
+		<br/><br/>
+		<span class="fa-stack fa-lg fa-5x">
+			<i class="fa fa-circle-o-notch fa-stack-2x"></i>
+			<!-- <i class="fa fa-square-o fa-stack-2x"></i> -->
+			<i class="fa fa-code fa-stack-1x"></i>
+		</span>
+		</p>
+	</div>
+	<div class='col-sm-3'>
+		<p class='lead text-align-center'>Created for starters
+		<br/>
+		<span class="fa-stack fa-lg fa-5x">
+			<i class="fa fa-comment-o fa-stack-2x"></i>
+			<i class="fa fa-bolt fa-stack-1x"></i>
+		</p>
+	</div>
+	<div class='col-sm-3'>
+		<p class='lead text-align-center'>Always Open Source
+		<br/><br/>
+		<span class="fa-stack fa-lg fa-5x">
+			<i class="fa fa-circle-o-notch fa-stack-2x"></i>
+			<!-- <i class="fa fa-square-o fa-stack-2x"></i> -->
+			<i class="fa fa-github fa-stack-1x"></i>
+		</span>
+		</p>
+
+	</div>
+
+</div>
 {% endblock %}
