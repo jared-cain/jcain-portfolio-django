@@ -12,7 +12,7 @@
     <link rel="icon" href="../../favicon.ico">
 
 
-    <title>Welcome</title>
+    <title>Welcome {% if not user %} Traveller! {% else %} {{ username }}! {% endif %} </title>
 
 
     <!-- Included files are included right at rendering time -->
