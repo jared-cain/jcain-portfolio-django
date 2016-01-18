@@ -1,3 +1,30 @@
+html,body {
+  /*margin: 0;
+  padding: 0;*/
+  width: 100% !important;
+  height: 100% !important;
+}
+
+body {
+  display: table;
+}
+
+.container {
+  height: auto;
+}
+
 .text-align-center {
     text-align: center;
+}
+
+.footer {
+  display: table-row;
+  height: 1px;
+  /*width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;*/
+  background-color: #333;
+  color: #fff;
+
 }
