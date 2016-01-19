@@ -22,6 +22,28 @@ body {
     text-align: center;
 }
 
+.push {
+    margin-bottom: 30px;
+}
+
+.space {
+    padding: 30px;
+}
+
+.large-font {
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.short_desc_font {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.short_desc:hover {
+    color: #5bc0de;
+}
+
 .footer {
   display: table-row;
   height: 1px;
