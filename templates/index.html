@@ -46,7 +46,7 @@
 
 <div class="row push space bg-warning">
     <div class='col-sm-12'>
-        <p class='lead text-align-center'>UI/UX
+        <p class='lead text-align-center' style="color:#A79432;"><span class="large-font">UI/UX</span>
         <br/>
         <span class="fa-stack fa-lg fa-5x">
             <i class="fa fa-comment-o fa-stack-2x"></i>
@@ -55,10 +55,14 @@
     </div>
     <div class="row">
     <div class="col-sm-9">
-        <p>About Us About Us About Us About Us About Us About Us About Us About Us About UsAbout UsAbout UsAbout UsAbout UsAbout UsAbout UsAbout UsAbout UsAbout UsAbout UsAbout UsAbout UsAbout UsAbout UsAbout UsAbout UsAbout UsAbout</p>
+        <ul class="fa-ul">
+        {% for item in ui_query %}
+            <li class="short_desc_font short_desc"><i class="fa-li fa fa-plus fa-1x"></i>{{ item }}</li>
+        {% endfor %}
+        </ul>
     </div>
     <div class="col-sm-3">
-        <p>Second About Us About Us About Us About Us About Us About Us About Us About Us About UsAbout UsAbout UsAbout UsAbout UsAbout UsAbout UsAbout UsAbout UsAbout UsAbout UsAbout UsAbout UsAbout UsAbout UsAbout UsAbout UsAbout UsAbout</p>
+        <img src="{% static 'img/ux-ui.png' %}" class="img-responsive hidden-xs hidden-sm" alt="" >
     </div>
     </div>
 </div>

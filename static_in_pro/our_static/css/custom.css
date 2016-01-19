@@ -9,6 +9,10 @@ body {
   display: table;
 }
 
+.bg-babyblue {
+    background-color: #DCF1F3;
+}
+
 .jumbotron {
     background-color: #646469;
     color: #fff;
