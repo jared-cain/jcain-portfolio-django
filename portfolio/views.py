@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 def index(request):
     template = 'index.html'
-    current_user = ''
+    name = ''
 
     python_queryset = ['Django REST Framework', 'Knowledgable with Python STD library', 'Custom Authentication/Authorization', '3rd party libraries e.g Virtualenv, Virtualenvwrapper, crispy_forms, django-registration-redux etc.',]
 

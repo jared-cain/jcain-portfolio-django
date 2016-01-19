@@ -9,6 +9,15 @@ body {
   display: table;
 }
 
+.read-more {
+    color: #FFF;
+    font-style: italic;
+}
+
+.read-more:hover {
+    color: #09C391;
+}
+
 .bg-babyblue {
     background-color: #DCF1F3;
 }
@@ -58,4 +67,17 @@ body {
   background-color: #333;
   color: #fff;
 
+}
+
+
+/******************
+    MEDIA QUERIES
+
+*******************/
+
+@media screen and (min-width: 768px){
+    .jumbotron {
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
 }

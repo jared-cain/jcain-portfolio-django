@@ -1,0 +1,46 @@
+{% load staticfiles %}
+ <!-- Static navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+      <!-- Container non fluid!!! -->
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="{% url 'home' %}">JCain portfolio</a>
+          <!-- <img src="{% static 'img/mvp_landing_logo.png' %}" />  -->
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+          {% if request.user.is_authenticated %}
+            <li><a href="#">Logout</a></li>
+          {% else %}
+            <li><a href="#">Register</a></li>
+          </ul>
+          {% endif %}
+
+          {% if not request.user.is_authenticated and not "/accounts/login" in request.get_full_path %}
+          <form class="navbar-form navbar-right" method="POST" action="">{% csrf_token %}
+            <div class="form-group">
+              <input type="text" class="form-control" name='username' placeholder="Email" />
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" name='password' placeholder="Password" />
+            </div>
+            <button type="submit" class="btn btn-defualt">Login</button>
+          </form>
+
+          {% endif %}
+
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
