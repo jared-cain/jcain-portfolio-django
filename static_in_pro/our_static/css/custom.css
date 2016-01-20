@@ -15,7 +15,8 @@ body {
 }
 
 .read-more:hover {
-    color: #09C391;
+    color: #FFF;
+    text-decoration: underline;
 }
 
 
@@ -24,8 +25,10 @@ body {
 }
 
 .jumbotron {
-    background-color: #646469;
+    background-color: #fff;
     color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container {
