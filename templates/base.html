@@ -11,20 +11,12 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-
     <title>Welcome {% if not user %} Traveller! {% else %} {{ username }}! {% endif %} </title>
-
 
     <!-- Included files are included right at rendering time -->
     {% include 'head_css.html' %}
 
-    <!-- {% block style %}
-    {% endblock %} -->
-
-
   </head>
-
-
 
 
   <body>
@@ -40,7 +32,6 @@
 
     <div class="container">
 
-      <!-- Blocks mark inheritance area. This 'block' tag will display the jumbotron info from home.html's jumbotron block tag -->
       {% block content %}
 
       {% endblock %}
