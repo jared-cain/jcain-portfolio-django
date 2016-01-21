@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% load crispy_forms_tags %}
+
 {% load staticfiles %}
 
 {% block jumbotron %}
@@ -96,8 +98,22 @@
 </div>
 
 <div class="row push space">
-	<div class="col-sm-12">
-		
+	<div class="col-sm-6 col-sm-offset-3">
+		{% if confirm_message %}
+		<h1 class="text-align-center">{{ confirm_message }}</h1>
+		{% else %}
+		<h1 class="text-align-center">Contact Me!</h1>
+		{% endif %}
+		{% if contact_form %}
+		<form class="text-align-center" method='POST' action='/'>{% csrf_token %}
+			{{ contact_form|crispy }}
+
+			<input class="btn btn-primary" type='submit' value='Submit'/>
+
+		</form>
+		{% else %}
+
+		{% endif %}
 	</div>
 </div>
 {% endblock %}

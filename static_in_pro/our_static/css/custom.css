@@ -9,6 +9,10 @@ body {
   display: table;
 }
 
+.dont_resize {
+    resize: none;
+}
+
 .read-more {
     color: #FFF;
     font-style: italic;
