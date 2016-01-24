@@ -11,7 +11,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>{{ title }}Welcome {% if not user.is_authenticated %} Traveller! {% else %} {{ username }}! {% endif %} </title>
+    <title>{{ title }}Welcome {% if not request.user.is_authenticated %} Traveller! {% else %} {{ username }}! {% endif %} </title>
 
     <!-- Included files are included right at rendering time -->
     {% include 'head_css.html' %}
