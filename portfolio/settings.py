@@ -42,10 +42,12 @@ INSTALLED_APPS = [
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
+    'django.contrib.sites',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
     'crispy_forms',
+    'registration',
     'accounts'
 ]
 
@@ -146,3 +148,13 @@ MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), "static_in_env", "media_roo
 
 
 CRISPY_TEMPLATE_PACK = 'bootstrap3'
+
+# REGISTRATION-REDUX SETTINGS
+ACCOUNT_ACTIVATION_DAYS = 7
+REGISTRATION_EMAIL_SUBJECT_PREFIX = '[Django reg test app]'
+SEND_ACTIVATION_EMAIL = True
+REGISTRATION_AUTO_LOGIN = False
+
+
+
+SITE_ID = 1
