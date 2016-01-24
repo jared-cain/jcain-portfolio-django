@@ -25,7 +25,7 @@ def index(request):
         'py_query': python_queryset,
         'ui_query': ui_queryset,
         'osx_query': osx_queryset,
-        'contact_form': contact_form
+        'contact_form': contact_form,
     }
 
     if contact_form.is_valid():
