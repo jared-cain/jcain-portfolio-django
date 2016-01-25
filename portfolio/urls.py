@@ -18,8 +18,6 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from .views import index
 
-from registration.backends.default import urls as reg_urls
-
 urlpatterns = [
     url(r'^$', index, name='home'),
     url(r'^admin/', admin.site.urls),
