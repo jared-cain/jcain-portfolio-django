@@ -24,6 +24,9 @@ body {
     text-decoration: underline;
 }
 
+.readmore:focus {
+    color: #FFF;
+}
 
 .bg-babyblue {
     background-color: #DCF1F3;
