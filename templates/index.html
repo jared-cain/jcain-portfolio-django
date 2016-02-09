@@ -5,7 +5,7 @@
 {% load staticfiles %}
 
 {% block jumbotron %}
-<div class="jumbotron" style="background-image: url({% static 'img/cidbackground.jpg' %})">
+<div class="jumbotron">
 <div class="container">
 <div class="row">
 
@@ -100,11 +100,7 @@
 <div class="row push space">
 	<div class="col-sm-6 col-sm-offset-3">
 		<a id="contact_me"></a>
-		{% if confirm_message %}
-		<h1 class="text-align-center">{{ confirm_message }}</h1>
-		{% else %}
 		<h1 class="text-align-center">Contact Me!</h1>
-		{% endif %}
 		{% if contact_form %}
 		<form class="text-align-center contact-form" method='POST' action='/'>{% csrf_token %}
 			{{ contact_form|crispy }}
