@@ -16,10 +16,12 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
-from .views import index
+
+from .views import index, contact_email
 
 urlpatterns = [
     url(r'^$', index, name='home'),
+    url(r'^contact_email/$', contact_email, name='contact_email'),
     url(r'^admin/', admin.site.urls),
     url(r'^accounts/', include('registration.backends.default.urls'))
 ]

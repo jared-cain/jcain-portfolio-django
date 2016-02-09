@@ -9,8 +9,8 @@
 <div class="container">
 <div class="row">
 
-	<div class="text-align-center">
-		<h1>JCain's Portfolio/Landing</h1>
+	<div class="jumbo-flow text-align-center">
+		<h1 class="header-flow">JCain's Portfolio/Landing</h1>
 		<p class='lead text-align-center'>This portfolio page is designed to educate clients and prospects about my skills as a full stack web developer</p>
 		<a class="read-more" href="#continue-reading">Read on...</a>
 	</div>
@@ -106,7 +106,7 @@
 		<h1 class="text-align-center">Contact Me!</h1>
 		{% endif %}
 		{% if contact_form %}
-		<form class="text-align-center" method='POST' action='/'>{% csrf_token %}
+		<form class="text-align-center contact-form" method='POST' action='/'>{% csrf_token %}
 			{{ contact_form|crispy }}
 
 			<input class="btn btn-primary" type='submit' value='Submit'/>
