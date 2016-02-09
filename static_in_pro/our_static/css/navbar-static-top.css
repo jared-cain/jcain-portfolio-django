@@ -9,7 +9,7 @@
 }
 
 .navbar-default .navbar-brand:hover {
-    color: #09C391;
+    color: #172169;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
@@ -20,7 +20,7 @@
     border-color: #fff !important;
 }
 .navbar-default .navbar-toggle:hover {
-    background-color: #09C391 !important;
+    background-color: #172169 !important;
     border-color: #fff !important;
 }
 
