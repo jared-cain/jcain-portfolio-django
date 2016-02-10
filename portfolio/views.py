@@ -11,11 +11,11 @@ def index(request):
 
     contact_form = ContactForm(request.POST or None)
 
-    python_queryset = ['Django REST Framework', 'Knowledgable with Python STD library', 'Custom Authentication/Authorization', '3rd party libraries e.g Virtualenv, Virtualenvwrapper, crispy_forms, django-registration-redux etc.',]
+    python_queryset = [' Django & Django REST Framework', 'Python STD library', 'Custom Authentication/Authorization', 'Custom use of ORM and Data handling', '3rd party libraries e.g Virtualenv, Virtualenvwrapper, crispy_forms, django-registration-redux etc.']
 
-    ui_queryset = ['HTML5/CSS3 ', 'Bootstrap 3+', 'Javascript and libraries e.g AngularJS and Jquery', 'Font-icons and 3rd party iconic fonts e.g FontAwesome', '2-Way data binding and loose coupling with AngularJS']
+    ui_queryset = ['HTML5/CSS3 ', 'Bootstrap 3+', 'Font-icons and 3rd party iconic fonts e.g FontAwesome', 'Responsive CSS Sprites', 'Ajax and Animation via Javascript/jQuery', '2-Way data binding and loose coupling with AngularJS']
 
-    osx_queryset = ['Intermediate knowledge of Ubuntu Linux/BASH', 'SSH VirtualBox and Vagrant', 'Postgresql/MySQL/sqlite3', 'Version control with Git', 'VIM!']
+    osx_queryset = ['Intermediate knowledge of Ubuntu Linux/BASH', 'SSH, VirtualBox and Vagrant', 'Postgresql/MySQL/sqlite3', 'Version control with Git', 'VIM!']
 
     if request.user.is_authenticated():
         current_user = request.user.get_full_name()
