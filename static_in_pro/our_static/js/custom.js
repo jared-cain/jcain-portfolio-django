@@ -62,9 +62,12 @@ jQuery.noConflict();
 
             // handle a successful response
             success: function( json, textStatus, xhr ){
-                console.log( json.result );
-                if (json[ 'result' ] == "success") {
-                    console.log( textStatus );
+
+                console.log( json.result);
+
+                if (json.result == "success") {
+
+                    console.log( textStatus + " 1" );
                     // Remove the value from the input
                     var $form = $( '.contact-form' );
                     var $sibling = $form.prev();
@@ -75,23 +78,21 @@ jQuery.noConflict();
                         opacity: 0.1
                     }, {
                         queue: false,
-                        duration: 800
+                        duration: 1200,
+                        complete: function( e ){
+                            $sibling.fadeOut('800', function( e ){
+                            $form.css({display: 'none'});
+                            $( this ).text('Thank you ' + json.name + ' for contacting us!').fadeIn(1300);
+                            console.log("see i did run");
+                            })
+                        },
                     })
 
-                    $sibling.fadeOut('800', function( e ){
-                        $form.css({display: 'none'});
-                        $( this ).text('Thank you ' + json.name + ' for contacting us!').fadeIn(500);
-                    })
-                    //
-                    // $form.css({display:'none'})
 
-
-
-                    // $( '<p> Thank you ' + json.name + ' for contacing us!</p>' ).appendTo($form.parent());
-                }
-                else {
+                } else {
                 // Remove form errors
                     $( '.contact-form' ).find(".errorField").remove();
+                    // console.log( json.result + " 2");
                     for (var key in json.result) {
                         if (key in { name: 1, email: 1, message: 1,}) {
 

@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.conf import settings
 from django.core.mail import send_mail
+from django.http import JsonResponse, HttpResponse
 
 from .forms import ContactForm
 
