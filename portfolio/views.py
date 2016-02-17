@@ -11,7 +11,7 @@ def index(request):
 
     contact_form = ContactForm(request.POST or None)
 
-    python_queryset = [' Django & Django REST Framework', 'Python STD library', 'Custom Authentication/Authorization', 'Custom use of ORM and Data handling', '3rd party libraries e.g Virtualenv, Virtualenvwrapper, crispy_forms, django-registration-redux etc.']
+    python_queryset = [' Django & Django REST Framework', 'Scalable, load-balanced, highly available environments', 'Custom Authentication/Authorization', 'ORM and Database management', '3rd party libraries e.g Virtualenv, Virtualenvwrapper, crispy_forms, django-registration-redux, OAuth etc.', "3rd party API's e.g Twilio, Google Maps and more."]
 
     ui_queryset = ['HTML5/CSS3 ', 'Bootstrap 3+', 'Font-icons and 3rd party iconic fonts e.g FontAwesome', 'Responsive CSS Sprites', 'Ajax and Animation via Javascript/jQuery', '2-Way data binding and loose coupling with AngularJS']
 

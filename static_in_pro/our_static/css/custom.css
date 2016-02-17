@@ -146,6 +146,10 @@ span.about_highlight {
     font-style:italic;
 }
 
+.avatar {
+    width: 15em;
+}
+
 
 /******************
     MEDIA QUERIES
