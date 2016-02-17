@@ -19,9 +19,36 @@
 </div>
 </div>
 </div>
+<a id="about"></a>
 {% endblock %}
 
 {% block content %}
+<div class="row push space test-div3 about_section">
+	<div class="col-sm-12 push">
+		<img class="img-responsive img-circle center-block" src="{% static 'img/about_avatar.jpg' %}" />
+	</div>
+	<div class="row">
+	<div class="col-sm-12">
+		<p class="about_text text-align-center"> Hello everybody! My name is Jared, and I'm a 100% self-taught full stack web developer!
+			I have been programming for <span class="about_highlight">3 years ( going on 4 )</span> and absolutely love it!
+			I initially started programming with <span class="about_highlight">PHP and Javascript</span> .
+			After being introduced to Python 2 years ago, I fell in love with its style and versatility so
+			much that it is now my "go to" backend language.
+		</br></br>
+		 	At this point, <span class="about_highlight">Python and Javascript</span> are my main loves in
+			life ( besides my <span class="about_highlight">amazing</span>  fiance! ).
+			Between the two languages, I am able to complete any neccessary web dev tasks
+			( whether it be frontend or backend ) while also having the flexibility to look at other areas
+			of the computer such as system programming!
+		</br></br>
+			Being the abstract and dynamic thinker that I am, of course...
+		</br></br>
+		<span style="color: #BFB204;font-size: 1.5em;">I AM WILLING TO LEARN!</span>
+		</p>
+	</div>
+	</div>
+</div>
+
 <div class="row push space">
 	<div class='col-sm-12'>
 		<a id="continue-reading"></a>
@@ -102,7 +129,7 @@
 		<a id="contact_me"></a>
 		<h1 class="text-align-center">Contact Me!</h1>
 		{% if contact_form %}
-		<form class="text-align-center contact-form" method='POST' action='/'>{% csrf_token %}
+		<form class="text-align-center contact-form" method='POST' action='contact_email/'>{% csrf_token %}
 			{{ contact_form|crispy }}
 
 			<input class="btn btn-primary" type='submit' value='Submit'/>

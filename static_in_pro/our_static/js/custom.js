@@ -43,6 +43,7 @@ jQuery.noConflict();
         900, 'swing', showHash);
     };
 
+    $( '.about-flow' ).on('click', scrollTo);
 
     $( '.contact-flow' ).on( 'click', scrollTo);
 
