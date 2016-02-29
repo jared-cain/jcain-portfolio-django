@@ -73,11 +73,19 @@ body {
 
 .short_desc_font {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 22px;
 }
 
-.short_desc:hover {
-    color: #5bc0de;
+.short_desc_py:hover {
+    color: #34671D;
+}
+
+.short_desc_ui:hover {
+    color: #A79432;
+}
+
+.short_desc_osx:hover {
+    color: #565B8C;
 }
 
 .footer {
