@@ -134,9 +134,10 @@ p.about_text {
     line-height: 1.5;
 }
 
+.quotation-mark{ margin-top: -10px; font-weight: bold; font-size:100px; color:#1b809e; font-family: "Times New Roman", Georgia, Serif; }
 
 span.about_highlight {
-    color:#fff;
+    color:#1b809e;
     font-style:italic;
 }
 
