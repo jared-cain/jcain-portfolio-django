@@ -13,7 +13,7 @@ def index(request):
 
     python_queryset = [' Django & Django REST Framework', 'Scalable, load-balanced, highly available environments', 'Custom Authentication/Authorization', 'ORM and Database management', '3rd party libraries e.g Virtualenv, Virtualenvwrapper, crispy_forms, django-registration-redux, OAuth etc.', "3rd party API's e.g Twilio, Google Maps and more."]
 
-    ui_queryset = ['HTML5/CSS3 ', 'Bootstrap 3+', 'Custom and 3rd party font-faces and iconic fonts e.g FontAwesome', 'Responsive CSS Sprites', 'Intermediate to Advanced Knowledge of Vanilla JS and Jquery', 'Ajax and Animation!' ]
+    ui_queryset = ['HTML5/CSS3 ', 'Bootstrap 3+', 'Custom and 3rd party font-faces and iconic fonts e.g FontAwesome', 'Responsive CSS Sprites', 'Intermediate to Advanced Knowledge of Vanilla JS (ES5) and Jquery', 'Ajax and Animation!' ]
 
     osx_queryset = ['Intermediate knowledge of Ubuntu Linux/BASH', 'SSH, VirtualBox and Vagrant', 'Postgresql/MySQL/sqlite3', 'Version control with Git', 'VIM!']
 
